@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Captcha Generator</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+    <script defer src="./script.js"></script>
+  </head>
+  <body>
+    <div
+      class="w-full min-h-screen bg-violet-500 flex justify-center items-center"
+    >
+      <div class="w-[500px] h-auto py-[50px] rounded-md bg-white">
+        <div class="flex items-center justify-center gap-[20px] wrapper">
+          <canvas
+            id="canvas"
+            width="200"
+            height="70"
+            class="border border-black rounded-[8px]"
+          ></canvas>
+          <button id="reload">
+            <i
+              class="fa-solid fa-arrow-rotate-right text-[26px] w-[100px] bg-violet-500 border-none rounded-[8px] text-white h-[70px] flex justify-center items-center"
+            ></i>
+          </button>
+        </div>
+        <div class="flex justify-center items-center mt-[20px]">
+          <input
+            type="text"
+            id="user-input"
+            placeholder="Enter the text in the image"
+            class="w-[320px] border border-black rounded-[8px] p-[10px] outline-none text-[18px] font-semibold placeholder:tracking-wider placeholder:font-semibold placeholder:text-black"
+          />
+        </div>
+        <div class="mt-[20px] flex justify-center items-center">
+          <button
+            id="submit-btn"
+            class="w-[320px] h-[50px] font-bold text-white rounded-[8px] bg-violet-500 mx-auto"
+          >
+            Submit
+          </button>
+        </div>
+        <p class="text-center pt-[15px] text-[20px] font-semibold result"></p>
+      </div>
+    </div>
+  </body>
+</html>
